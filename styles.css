@@ -43,11 +43,27 @@ h2 {
   gap: 1rem;
 }
 .project-card {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  justify-content: space-between; /* push link to bottom */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
   background: #fafafa;
+  min-height: 250px;  /* ensures a consistent minimum height */
 }
+.project-card a {
+  margin-top: auto;  /* ensures the link is always at the bottom */
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -55,3 +71,5 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+
+
