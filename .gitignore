@@ -1,0 +1,32 @@
+# Node / build artifacts (not needed for static site but useful if tools added)
+node_modules/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+npm-debug.log*
+.yarn-debug.log*
+.yarn-error.log*
+
+# Env files
+.env
+
+# Optional: JetBrains
+.idea/
+
+# HTML/CSS project
+*.zip
+*.tar.gz
+
+# Temp files
+*.tmp
+
+# Ignore Windows desktop.ini
+desktop.ini
