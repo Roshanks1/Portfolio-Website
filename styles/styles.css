@@ -1,3 +1,27 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'reem kufi', sans-serif;
+}
+
+.welcome-container a {
+  font-family: reem kufi, sans-serif;
+}
+
+.welcome-container h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-container p {
+  font-family: 'reem kufi', sans-serif;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,16 +31,34 @@ body {
   color: #333;
 }
 header {
-  background: #1e3a8a;
+  background: #000000;
   color: white;
   padding: 1rem 2rem;
   text-align: center;
 }
-header h1 {
+nav {
+  text-decoration: none;
+}
+header h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
+p {
+  font-family: Reem Kufi, sans-serif;
+}
 nav {
-  margin-top: 0.5rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+    z-index: 99999999999;
+    font-family: reem kufi, sans-serif;
 }
 nav a {
   color: white;
@@ -35,7 +77,7 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 h2 {
-  color: #1e3a8a;
+  color: #ffffff;
 }
 .projects {
   display: grid;
@@ -52,7 +94,7 @@ h2 {
   background: #fafafa;
   min-height: 250px;  /* ensures a consistent minimum height */
 }
-.project-card a {
+.project-card a { /* Link styling */
   margin-top: auto;  /* ensures the link is always at the bottom */
   display: inline-block;
   margin-top: 1rem;
@@ -67,7 +109,7 @@ h2 {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #1e3a8a;
+  background: #000000;
   color: white;
   margin-top: 2rem;
 }
